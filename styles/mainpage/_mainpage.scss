@@ -1,0 +1,48 @@
+.mainpage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 568px;
+  margin-bottom: 1rem;
+
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px 1px #8b8b8b;
+
+  &__header {
+    width: 100%;
+    padding: 0.6rem;
+
+    background-color: #fff;
+    border-bottom: 1px solid #8b8b8b;
+  }
+
+  &__image {
+    height: 425px;
+    overflow: hidden;
+
+    & img {
+      transform: translateY(-425px);
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3rem 3rem;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      color: #3686c7;
+      & img {
+        width: 22px;
+        height: 22px;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Diplomata&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>HR Manager - Кандидаты</title>
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <div class="sidebar__inner">
+        <div class="sidebar__header">
+          <h1 class="title">HR Manager</h1>
+        </div>
+        <div class="sidebar__search">
+          <input type="text" class="sidebar__input" />
+          <a href="#"
+            ><img src="./assets/icons/search.svg" alt="searchicon"
+          /></a>
+        </div>
+        <div class="sidebar__main">
+          <div class="sidebar__item">
+            <img src="./assets/icons/home.svg" alt="" />
+            <a href="./mainpage.html">Главная страница</a>
+          </div>
+          <div class="sidebar__item">
+            <img src="./assets/icons/tasks.svg" alt="" />
+            <p>Мои задачи</p>
+          </div>
+          <div class="sidebar__item">
+            <img src="./assets/icons/team.svg" alt="" />
+            <p>Сотрудники</p>
+          </div>
+          <div class="sidebar__item">
+            <img src="./assets/icons/medical.svg" alt="" />
+            <p>Заявления на отсутствие</p>
+          </div>
+          <div class="sidebar__item">
+            <img src="./assets/icons/sea.svg" alt="" style="opacity: 0.5" />
+            <p>Заявления на отпуск</p>
+          </div>
+          <div class="sidebar__item">
+            <img src="./assets/icons/plane.svg" alt="" />
+            <p>Командировки</p>
+          </div>
+          <div class="sidebar__item">
+            <img src="./assets/icons/bag.svg" alt="" style="opacity: 0.6" />
+            <p>Вакансии</p>
+          </div>
+          <div class="sidebar__item active">
+            <img src="./assets/icons/candidate-white.svg" alt="" />
+            <a href="./candidates.html">Кандидаты</a>
+          </div>
+        </div>
+        <div class="sidebar__footer">
+          <h1 class="title">HR Manager</h1>
+        </div>
+      </div>
+    </nav>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__left">
+        <a href="#" class="header__section">Сервисы управления персоналом</a>
+        <h1 class="header__sectiontype">Приём на работу</h1>
+      </div>
+      <div class="header__right">
+        <p class="header__hello">Здравствуйте, Сергей Александрович</p>
+        <a href="#" class="header__avatar">
+          <img src="./assets/avatar/m0N4R6XWgSU.jpg" alt="avatar" />
+        </a>
+        <a href="#" class="header__settings">
+          <img src="./assets/icons/settings.svg" alt="settings" />
+        </a>
+        <a href="./index.html" class="header__logout">
+          <img src="./assets/icons/log-out.svg" alt="logout" />
+        </a>
+      </div>
+    </header>
+    <!-- Main -->
+    <main class="main">
+      <section class="inner">
+        <div class="inner__header">
+          <a href="#" alt="link">Все приёмы на работу</a>
+        </div>
+        <div class="inner__outter">
+          <div class="inner__btn">
+            <a href="#" alt="link">
+              <img src="./assets/icons/newworker.svg" alt="newworker" />
+              Принять на работу нового сотрудника
+            </a>
+          </div>
+          <table class="inner__table">
+            <thead>
+              <td>
+                <input type="checkbox" />
+              </td>
+              <td>Кандидат</td>
+              <td>Дата принятия</td>
+              <td>Условия приёма на работу</td>
+              <td>Статус</td>
+            </thead>
+            <tr>
+              <td>
+                <input type="checkbox" />
+              </td>
+              <td colspan="4">Статус: <a href="#">Адаптация сотрудника</a></td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" />
+              </td>
+              <td><a href="#">Иванов П. А.</a></td>
+              <td>16.08.2022</td>
+              <td>Заработная плата 65000 рублей 5-ти дневная рабочая неделя</td>
+              <td>Адаптация сотрудника</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" />
+              </td>
+              <td><a href="#">Петров С. П.</a></td>
+              <td>21.08.2022</td>
+              <td>Заработная плата 65000 рублей 5-ти дневная рабочая неделя</td>
+              <td>Адаптация сотрудника</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" />
+              </td>
+              <td colspan="4">
+                Статус:
+                <a href="#">Оформление сотрудника - Запрос копий документов</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" />
+              </td>
+              <td><a href="#">Симонов А. К.</a></td>
+              <td>01.09.2022</td>
+              <td>Заработная плата 65000 рублей 5-ти дневная рабочая неделя</td>
+              <td>Запрос копий документов</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" />
+              </td>
+              <td><a href="#">Волков И. С.</a></td>
+              <td>05.09.2022</td>
+              <td>Заработная плата 65000 рублей 5-ти дневная рабочая неделя</td>
+              <td>Запрос копий документов</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" />
+              </td>
+              <td colspan="4">
+                Статус:
+                <a href="#">Оформление сотрудника - Прохождение медосмотра</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" />
+              </td>
+              <td><a href="#">Смирнов Т. Е.</a></td>
+              <td>31.08.2022</td>
+              <td>Заработная плата 65000 рублей 5-ти дневная рабочая неделя</td>
+              <td>Прохождение медосмотра</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" />
+              </td>
+              <td><a href="#">Петухов С. А.</a></td>
+              <td>31.08.2022</td>
+              <td>Заработная плата 65000 рублей 5-ти дневная рабочая неделя</td>
+              <td>Прохождение медосмотра</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" />
+              </td>
+              <td colspan="4">Статус: <a href="#">Сотрудник принят</a></td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" />
+              </td>
+              <td><a href="#">Столетов К. А.</a></td>
+              <td>02.08.2022</td>
+              <td>Заработная плата 65000 рублей 5-ти дневная рабочая неделя</td>
+              <td>Сотрудник принят</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" />
+              </td>
+              <td><a href="#">Фёдоров А. А.</a></td>
+              <td>02.08.2022</td>
+              <td>Заработная плата 65000 рублей 5-ти дневная рабочая неделя</td>
+              <td>Сотрудник принят</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" />
+              </td>
+              <td><a href="#">Ишунин В. Д.</a></td>
+              <td>03.08.2022</td>
+              <td>Заработная плата 65000 рублей 5-ти дневная рабочая неделя</td>
+              <td>Сотрудник принят</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" />
+              </td>
+              <td><a href="#">Панкратова И. Д.</a></td>
+              <td>05.08.2022</td>
+              <td>Заработная плата 65000 рублей 5-ти дневная рабочая неделя</td>
+              <td>Сотрудник принят</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" />
+              </td>
+              <td><a href="#">Исаева М. А.</a></td>
+              <td>06.08.2022</td>
+              <td>Заработная плата 65000 рублей 5-ти дневная рабочая неделя</td>
+              <td>Сотрудник принят</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" />
+              </td>
+              <td><a href="#">Козлов В. В.</a></td>
+              <td>10.08.2022</td>
+              <td>Заработная плата 65000 рублей 5-ти дневная рабочая неделя</td>
+              <td>Сотрудник принят</td>
+            </tr>
+          </table>
+        </div>
+        <div class="inner__footer">
+          <div class="count">
+            <p>Всего записей: <b>12</b></p>
+          </div>
+          <div class="inner__footer__item">
+            <a class="inner__footer__btn" href="./workspace.html">Изменить статус выбранных кандидатов</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Worker card -->
+    <div class="mask">
+      <div class="card">
+        <div class="card__title">
+          <h1>Добавить нового кандидата</h1>
+        </div>
+        <div class="card__main">
+          <form action="#" class="card__form">
+            <div class="card__item">
+              <label for="name">ФИО: </label>
+              <input type="text" id="name" placeholder="Введите ФИО">
+            </div>
+            <div class="card__item">
+              <label for="gender">Пол: </label>
+              <select id="gender">
+                <option value="Мужской">Мужской</option>
+                <option value="Женский">Женский</option>
+              </select>
+            </div>
+            <div class="card__item">
+              <label for="birthdate">Дата рождения: </label>
+              <input type="date" id="birthdate">
+            </div>
+            <div class="card__item">
+              <label for="birthplace">Место рождения: </label>
+              <input type="text" id="birthplace" placeholder="Введите место рождения">
+            </div>
+            <div class="card__item">
+              <label for="citizenship">Гражданство: </label>
+              <input type="text" id="citizenship" placeholder="Введите гражданство">
+            </div>
+            <div class="card__item">
+              <label for="passportnumber">Номер паспорта: </label>
+              <input type="number" id="passportnumber" placeholder="Введите Номер паспорта">
+            </div>
+            <div class="card__item">
+              <label for="passportplace">Кем выдан: </label>
+              <input type="text" id="passportplace" placeholder="Наименование подразделения">
+            </div>
+            <div class="card__item">
+              <label for="passportdate">Дата выдачи: </label>
+              <input type="date" id="passportdate">
+            </div>
+            <div class="card__item">
+              <label for="homeadress">Адрес проживания: </label>
+              <input type="text" id="homeadress" placeholder="Введите адрес">
+            </div>
+            <div class="card__item">
+              <label for="telnumber">Номер телефона: </label>
+              <input type="number" id="telnumber" placeholder="Введите телефонный номер">
+            </div>
+            <div class="card__item">
+              <label for="email">Электронная почта: </label>
+              <input type="email" id="email" placeholder="Введите адрес электронной почты">
+            </div>
+            <div class="card__item">
+              <label for="mednumber">СНИЛС: </label>
+              <input type="number" id="mednumber" placeholder="Введите СНИЛС">
+            </div>
+            <div class="card__item">
+              <label for="taxnumber">ИНН: </label>
+              <input type="number" id="taxnumber" placeholder="Введите ИНН">
+            </div>
+            <div class="card__item">
+              <label for="education">Образование: </label>
+              <select type="text" id="education">
+                <option value="Высшее">Высшее</option>
+                <option value="Средне-специальное">Средне-специальное</option>
+                <option value="Среднее-общее">Среднее-общее</option>
+              </select>
+            </div>
+            <div class="card__item">
+              <label for="post">Должность: </label>
+              <input type="text" id="post" placeholder="Введите должность">
+            </div>
+            <div class="card__item">
+              <label for="pay">Размер заработной платы: </label>
+              <input type="number" id="pay" placeholder="Введите размер зарплаты">
+            </div>
+            <input class="card__btn" type="submit" value="Добавить сотрудника" onclick="alert('Сотрудник успешно добавлен!')">
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
